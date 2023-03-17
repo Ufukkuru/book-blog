@@ -1,0 +1,270 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.usersbtn{
+    margin: auto;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.nas{
+  font-size: 20px ;
+  letter-spacing: 2px;
+}
+
+
+.togl{
+  margin-left: auto;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+a:hover{
+    color:darkslategray;
+}
+
+.carimgs{
+  width: 100%;
+}
+
+.carimg{
+  width:100%;
+ height: 700px;
+}
+
+.popcard{
+  width: 100%;
+  height: 250px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.popcard:hover{
+  transform: scale(1.1);
+}
+
+.borders-card{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+  }
+  .borders-card:hover{
+    transform: scale(1.009);
+  }
+  
+
+  .nadoninehundred{
+    display: none;
+  }
+
+  .nodoco{
+      display: inline-block;
+      cursor: pointer;
+  }
+
+  .nav-item a {
+    color: black;
+  }
+  .nav-item a:hover {
+    color: black;
+  }
+
+  .line{
+    width: 0px;
+    height: 2px;
+    background-color: black;
+    visibility: hidden;
+    transition: all 0.5s ease;
+  }
+
+  a:hover + .line{
+    width: 100%;
+    visibility:visible;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+  .wicard{
+    width: 20rem;
+  }
+
+  .artcard{
+    width: 700px;
+  }
+
+  .texbox{
+    width: 50%;
+  }
+
+  .articimg{
+    width: 100%;
+    height: 250px;
+  }
+  
+  .vio{
+    width: 415px;
+    height: 250px;
+  }
+
+  .bgregister {
+    background-image: url(/images/registerbackground.png);
+    background-size:contain;
+    background-repeat:repeat;
+  }
+
+  @media screen and (max-width:1100px){
+    html {
+      font-size: 90%;
+    }
+    .svg-img{
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  @media screen and (max-width:992px){
+    html {
+      font-size: 80%;
+    }
+    .wicard{
+      width: 98%;
+    }
+
+    .artcard{
+      width: 98%;
+    }
+    .artcard img{
+      height: 300px;
+      width: 100%;
+    }
+
+    .texbox{
+      width: 100%;
+    }
+
+    .texboxs{
+      width: 90%;
+    }
+
+    .chec{
+      display: none;
+    }
+
+    .carimgs{
+      width: 100%;
+    }
+    
+    .carimg{
+      width:100%;
+     max-height: 600px;
+    }
+    
+    .borders-card:hover{
+      transform: none;
+    }
+    .popcard:hover{
+      transform: none;
+    }
+  
+  }
+
+  @media screen and (max-width:800px){
+    .nadoninehundred{
+      display: block;
+    }
+    .svg-img{
+      width: 25px;
+      height: 25px;
+    }
+    .nadothousand{
+      display: none;
+    }
+    .bar1, .bar2, .bar3 {
+      width: 30px;
+      height: 7px;
+      background-color: #333;
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+  }
+
+  @media screen and (max-width:400px) {
+    .bar1, .bar2, .bar3 {
+      width: 25px;
+      height: 5px;
+      background-color: #333;
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+    html{
+      font-size: 75%;
+    }
+    .borders-card{
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      }
+      .articimgs{
+        width: 100%;
+      }
+  }
